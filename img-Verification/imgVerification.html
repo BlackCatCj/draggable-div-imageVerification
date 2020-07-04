@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片验证</title>
+    <style>
+        div.photos {
+            position: relative;
+        }
+
+        img[src="img/movepic.jpg"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: move;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>请拖动到响应的位置</h1>
+        <div class="photos">
+            <!-- src路径不要加上项目文件夹的路径，加上就会找不到文件  直接用项目中的文件夹路径 -->
+            <img src="img/endpic.jpg" alt="endpic" draggable="false">
+            <img src="img/movepic.jpg" alt="movepic" draggable="false">
+        </div>
+    </section>
+    <script src="offset.js"></script>
+</body>
+
+</html>
