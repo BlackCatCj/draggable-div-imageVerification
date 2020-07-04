@@ -1,1 +1,3 @@
-# draggable-div-imageVerification
+通过移动图片到指定的位置完成验证
+
+
